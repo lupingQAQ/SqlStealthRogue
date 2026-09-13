@@ -1,9 +1,16 @@
 __pycache__/
 *.py[cod]
 *.egg-info/
+build/
+dist/
 .venv/
 venv/
+.env
+node_modules/
 .DS_Store
 Thumbs.db
 *.log
+*.jsonl
+*.ser
+*.db
 dump.txt
