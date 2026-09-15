@@ -2,7 +2,7 @@
 union: script_fields 直接返回字段值(响应 JSON 中), 1 请求拉全部命中行。
 bool: 脚本返回布尔, 响应 _fields.l 中出现 true, --true-mark 匹配 "true"。
 time: 重循环(不可靠)。painless 白名单收紧的集群可能直接拒绝脚本。
-未实机验证。"""
+ES 8.15 真机已验证(union/bool); time 未实测。"""
 
 PROFILE = {
     'name': 'elasticsearch',

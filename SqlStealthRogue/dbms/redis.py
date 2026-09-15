@@ -1,7 +1,7 @@
 """Redis — 注入面: HTTP 应用拼接 Redis 命令(CRLF 内联命令注入), 载荷用 EVAL Lua。
-建议 --raw 让真实 CRLF 进入协议; {F} = 目标 key(-q 提供)。
+{F} = 目标 key(-q 提供); 响应是否可见取决于应用的回显方式。
 union 一个请求直接带回整个值; bool/time 用 Lua byte 比较。
-未实机验证, 且响应是否可见取决于应用的回显方式。"""
+Redis 7 真机已验证(union/bool); time 未实测。"""
 
 PROFILE = {
     'name': 'redis',
